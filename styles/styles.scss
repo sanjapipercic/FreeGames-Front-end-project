@@ -1,0 +1,13 @@
+@import '_variables';
+@import '_header';
+@import '_games';
+@import '_game';
+@import '_searchedGame';
+@import '_burger-menu';
+
+*{
+    font-family: 'Poppins', sans-serif;
+    background: $backgroundColor;
+}
+
+

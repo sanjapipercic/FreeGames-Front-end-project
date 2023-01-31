@@ -1,0 +1,114 @@
+.category{
+    text-align: center;
+    color: $secondaryColor;
+    text-transform: uppercase;
+}
+#games{
+    margin: 2rem;
+    ol{
+        list-style: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1.5rem;
+        li.game{
+            @import '_sharedGameStyle';
+        }
+    }
+}
+@media(max-width: 1024px){
+    #logo{
+        left: 25%!important;
+        font-size: 6rem!important;
+    }
+    .links{
+        position: relative;
+        display: none;
+        visibility: hidden;
+    }
+    .menu-btn{
+        visibility: visible!important;
+    }
+
+    #games{
+        ol{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    .basic{
+        flex-wrap: wrap;
+        img{
+            width: 90vh!important;
+            height: 70%!important;
+        }
+    }
+
+}
+@media(max-width: 768px){
+    #logo{
+        margin: 0!important;
+        font-size: 5rem!important;
+        display: block;
+        span{
+            display: block;
+        }
+    }
+
+    #games{
+        ol{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    .gameData{
+        margin: 0 auto;
+        padding: 0 2rem;
+        .basic{
+            flex-wrap: wrap;
+            img{
+                width: 80vh!important;
+                height: 50%!important;
+            }
+            div{
+                margin-bottom: 2rem ;
+            }
+        }
+    
+    }
+}
+
+@media(max-width: 500px){
+    #logo{
+        margin: 0!important;
+        font-size: 3rem!important;
+        display: block;
+        span{
+            display: block;
+        }
+    }
+    #games{
+        ol{
+            display: grid;
+            grid-template-columns:1fr;
+            li{
+                width: 100%;
+                .image{
+                    background-repeat: no-repeat!important;
+                    width: 50vh!important;
+                }
+            }
+        }
+    }
+    .basic{
+        flex-wrap: wrap;
+        a{
+            margin-bottom: 2rem;
+        }
+    }
+    .info{
+        display: grid;
+        grid-template-columns: 1fr 1fr!important;
+    }
+
+}

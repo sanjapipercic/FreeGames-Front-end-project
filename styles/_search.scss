@@ -1,0 +1,29 @@
+.search {
+    form {
+      @include flexCenter(row);
+      justify-content: space-around;
+
+      gap: 0.5rem;
+      #gameName {
+        border: 2px solid $secondaryColor;
+        border-radius: 10px;
+        height: +20%;
+        color: $secondaryColor;
+        font-size: 1.2rem;
+      }
+      #searchBtn {
+        color: $secondaryColor;
+        border: none;
+        cursor: pointerl;
+        &:hover {
+          background-color: $backgroundColor;
+          color: $secondaryColor;
+        }
+        i.fa-magnifying-glass {
+          &:hover {
+            text-shadow: 2px 2px 10px #ff5f1f;
+          }
+        }
+      }
+    }
+  }

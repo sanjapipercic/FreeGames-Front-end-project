@@ -1,0 +1,90 @@
+main {
+  color: $textColor;
+}
+h3 {
+  font-size: 1.5rem;
+  color: $secondaryColor;
+}
+h1 {
+  font-size: 3rem;
+  color: $secondaryColor;
+}
+
+.gameData {
+  .basic {
+    @include flexCenter(row);
+    justify-content: unset;
+    gap: 2rem;
+    h1{
+      margin-top: 0;
+    }
+    img {
+      width: 40rem;
+      height: 20rem;
+      border-radius: 10px;
+    }
+    p {
+      margin-bottom: 2rem;
+      width: 70%;
+    }
+    a {
+      background-color: $secondaryColor;
+      font-size: 2rem;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 0.4rem 2rem;
+      border-radius: 10px;
+      &:hover {
+        box-shadow: 5px 5px 8px #d369003d;
+      }
+      &:visited {
+        color: $backgroundColor;
+      }
+    }
+  }
+  .about {
+    width: 80%;
+    text-align: justify;
+    padding-left: 10%;
+  }
+  .info {
+    width: 80%;
+    padding-left: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.screenshots {
+  margin: 0;
+  @include flexCenter(column);
+  justify-content: unset;
+  align-items: unset;
+
+  div {
+    padding-left: 10%;
+    padding-right: 10%;
+    @include flexCenter(row);
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .screenshot {
+    width: 18rem;
+    height: 10rem;
+    padding: 0.5rem;
+    border: 2px solid $secondaryColor;
+    border-radius: 5px;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: scale(2);
+    }
+  }
+}
+.requirements {
+  width: 80%;
+  .requirement {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 10%;
+  }
+}

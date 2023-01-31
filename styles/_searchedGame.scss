@@ -1,0 +1,7 @@
+#games{
+    margin: 2rem;
+    div.game{
+        width: 20rem;
+        @import '_sharedGameStyle';
+    }
+}
